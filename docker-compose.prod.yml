@@ -65,10 +65,10 @@ services:
     # database
     boca-db:
         image: postgres:14-alpine
-            environment:
-                # database configuration
-                # privileged user password
-                - POSTGRES_PASSWORD=superpass
+        environment:
+        # database configuration
+        # privileged user password
+        - POSTGRES_PASSWORD=superpass
         deploy:
             mode: global
             placement:
